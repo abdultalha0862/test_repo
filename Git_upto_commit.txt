@@ -1,0 +1,380 @@
+Abdul Talha@AbdulTalha08 MINGW64 ~
+$ ls
+'(House Price Prediction).ipynb'  'Local Settings'@                                                                               PycharmProjects
+ 0.0.7                             Music/                                                                                         Recent@
+ AppData/                         'My Documents'@                                                                                'Saved Games'/
+'Application Data'@                NTUSER.DAT                                                                                     Searches/
+ Contacts/                         NTUSER.DAT{430813ce-dc15-11ed-adf0-e64070092465}.TxR.0.regtrans-ms                             SendTo@
+ Cookies@                          NTUSER.DAT{430813ce-dc15-11ed-adf0-e64070092465}.TxR.1.regtrans-ms                            'Start Menu'@
+ D/                                NTUSER.DAT{430813ce-dc15-11ed-adf0-e64070092465}.TxR.2.regtrans-ms                             Templates@
+ Desktop/                          NTUSER.DAT{430813ce-dc15-11ed-adf0-e64070092465}.TxR.blf                                       Untitled.ipynb
+ Documents/                        NTUSER.DAT{430813cf-dc15-11ed-adf0-e64070092465}.TM.blf                                        Untitled1.ipynb
+ Downloads/                        NTUSER.DAT{430813cf-dc15-11ed-adf0-e64070092465}.TMContainer00000000000000000001.regtrans-ms   Untitled2.ipynb
+ Example/                          NTUSER.DAT{430813cf-dc15-11ed-adf0-e64070092465}.TMContainer00000000000000000002.regtrans-ms   Untitled3.ipynb
+ Favorites/                        NetHood@                                                                                       Untitled4.ipynb
+'House price prediction.ipynb'     OneDrive/                                                                                      Untitled5.ipynb
+ IdeaProjects/                     PrintHood@                                                                                     Videos/
+ Links/                            Project.ipynb                                                                                 'WPS Cloud Files
+
+Abdul Talha@AbdulTalha08 MINGW64 ~
+$ cd Desktop
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop
+$ ls
+ ATS_Project/               CsFundamnetals/  'GitHub projects'/   Java/    Notion.lnk*  'Sigma Web Devlopement'/     '~$jor_Project_Draft_1.docx'
+ Al/                        Emails/           GitHub_FullStack/   King/   'Old Files'/   desktop.ini                 '~$jor_Project_Draft_2.docx'
+'Ceritificates & Resume'/   FolderOne/        HProjects/          MLOps/   Python/      '~$dulTalha_Seminar_2.docx'  '~$w Microsoft Word Document
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop
+$ cd FolderOne
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ls
+file1.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ls
+File2.txt  file1.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        File2.txt
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git add file1.txt
+warning: in the working copy of 'file1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git add .
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ls
+File2.txt  file1.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   File2.txt
+        new file:   file1.txt
+
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git commit -m "Files added"
+[main (root-commit) 8899e2b] Files added
+ 2 files changed, 3 insertions(+)
+ create mode 100644 File2.txt
+ create mode 100644 file1.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git log
+commit 8899e2bd6af5e2fc07b7c0dd7c31ad87bf93baa4 (HEAD -> main)
+Author: abdultalha0862 <20211a0405@bvrit.ac.in>
+Date:   Fri Dec 13 20:03:49 2024 +0530
+
+    Files added
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git log --oneline
+8899e2b (HEAD -> main) Files added
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File2.txt
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git add .
+warning: in the working copy of 'file1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   File2.txt
+        modified:   file1.txt
+
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git commit -m "Updated File1 and File2"
+[main 0556ce2] Updated File1 and File2
+ 2 files changed, 5 insertions(+)
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git log
+commit 0556ce2ca2790fce6603b197dfd6498dd4890a6a (HEAD -> main)
+Author: abdultalha0862 <20211a0405@bvrit.ac.in>
+Date:   Fri Dec 13 20:06:29 2024 +0530
+
+    Updated File1 and File2
+
+commit 8899e2bd6af5e2fc07b7c0dd7c31ad87bf93baa4
+Author: abdultalha0862 <20211a0405@bvrit.ac.in>
+Date:   Fri Dec 13 20:03:49 2024 +0530
+
+    Files added
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git log --oneline
+0556ce2 (HEAD -> main) Updated File1 and File2
+8899e2b Files added
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git add file2.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git add File2.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   File2.txt
+
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git commit -m "Updated file2"
+[main b3878cc] Updated file2
+ 1 file changed, 2 insertions(+)
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ls
+File2.txt  file1.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ notepad hello.py
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ls
+File2.txt  file1.txt  hello.py
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ python hello.py
+bash: python: command not found
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git add hello.py
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git commit -m "Added python file"
+[main ba12850] Added python file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.py
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git log
+commit ba1285025c70d55405d27dc9cd89f9bcbf8637f1 (HEAD -> main)
+Author: abdultalha0862 <20211a0405@bvrit.ac.in>
+Date:   Fri Dec 13 20:10:33 2024 +0530
+
+    Added python file
+
+commit b3878cc236105fdf36a8e32a9f8cca9182936274
+Author: abdultalha0862 <20211a0405@bvrit.ac.in>
+Date:   Fri Dec 13 20:08:23 2024 +0530
+
+    Updated file2
+
+commit 0556ce2ca2790fce6603b197dfd6498dd4890a6a
+Author: abdultalha0862 <20211a0405@bvrit.ac.in>
+Date:   Fri Dec 13 20:06:29 2024 +0530
+
+    Updated File1 and File2
+
+commit 8899e2bd6af5e2fc07b7c0dd7c31ad87bf93baa4
+Author: abdultalha0862 <20211a0405@bvrit.ac.in>
+Date:   Fri Dec 13 20:03:49 2024 +0530
+
+    Files added
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ls
+File2.txt  file1.txt  hello.py
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ notepad results.txt
+
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ls
+File2.txt  file1.txt  hello.py  results.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ results.txt
+bash: results.txt: command not found
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ results
+bash: results: command not found
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        results.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git add results.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   results.txt
+
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git commit -m "Added results file"
+[main 3577f9f] Added results file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 results.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ls
+File2.txt  file1.txt  hello.py  results.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ls
+File2.txt  file1.txt  hello.py  results.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git log --oneline
+3577f9f (HEAD -> main) Added results file
+ba12850 Added python file
+b3878cc Updated file2
+0556ce2 Updated File1 and File2
+8899e2b Files added
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git log
+commit 3577f9fa4de7b75e06825244779e3edb66b1e997 (HEAD -> main)
+Author: abdultalha0862 <20211a0405@bvrit.ac.in>
+Date:   Fri Dec 13 20:12:48 2024 +0530
+
+    Added results file
+
+commit ba1285025c70d55405d27dc9cd89f9bcbf8637f1
+Author: abdultalha0862 <20211a0405@bvrit.ac.in>
+Date:   Fri Dec 13 20:10:33 2024 +0530
+
+    Added python file
+
+commit b3878cc236105fdf36a8e32a9f8cca9182936274
+Author: abdultalha0862 <20211a0405@bvrit.ac.in>
+Date:   Fri Dec 13 20:08:23 2024 +0530
+
+    Updated file2
+
+commit 0556ce2ca2790fce6603b197dfd6498dd4890a6a
+Author: abdultalha0862 <20211a0405@bvrit.ac.in>
+Date:   Fri Dec 13 20:06:29 2024 +0530
+
+    Updated File1 and File2
+
+commit 8899e2bd6af5e2fc07b7c0dd7c31ad87bf93baa4
+Author: abdultalha0862 <20211a0405@bvrit.ac.in>
+Date:   Fri Dec 13 20:03:49 2024 +0530
+
+    Files added
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git log --oneline
+3577f9f (HEAD -> main) Added results file
+ba12850 Added python file
+b3878cc Updated file2
+0556ce2 Updated File1 and File2
+8899e2b Files added
