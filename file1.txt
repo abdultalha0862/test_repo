@@ -1,7 +1,2 @@
-This is my first file contains some text 
-
-in this file i am gonna add some text in this file1
-
-fotter content added 
-
+1- In this file iam gonna insert some information texrt for sample reference.
 
