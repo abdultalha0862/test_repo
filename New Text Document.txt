@@ -1,0 +1,370 @@
+Abdul Talha@AbdulTalha08 MINGW64 ~
+$ ls
+'(House Price Prediction).ipynb'  'House price prediction.ipynb'
+ 0.0.7                             IdeaProjects/
+ AppData/                          Links/
+'Application Data'@               'Local Settings'@
+ Contacts/                         Music/
+ Cookies@                         'My Documents'@
+ D/                                NTUSER.DAT
+ Desktop/                          NTUSER.DAT{430813cf-dc15-11ed-adf0-e64070092465}.TM
+ Documents/                        NTUSER.DAT{430813cf-dc15-11ed-adf0-e64070092465}.TM
+ Downloads/                        NTUSER.DAT{430813cf-dc15-11ed-adf0-e64070092465}.TM
+ Example/                          NetHood@
+ Favorites/                        OneDrive/
+
+Abdul Talha@AbdulTalha08 MINGW64 ~
+$ cd Desktop
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop
+$ ls
+ 671b6ec0bcb52d06ddce3e84_MySQL_logo.svg   CsFundamnetals/   Git/                HProj
+ ATS_Project/                              Emails/           GitBranch/          Java/
+ Al/                                       Folder/          'GitHub projects'/   King/
+'Ceritificates & Resume'/                  FolderOne/        GitHub_FullStack/   MLOps
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop
+$ cd FolderOne
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ls
+File2.txt  Git_upto_commit.txt  file1.txt  hello.py  results.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git diff
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git diff --staged
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git branch
+  bugfix
+* main
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git diff bugfix main
+diff --git a/File2.txt b/File2.txt
+index 6e5c302..73f1cd6 100644
+--- a/File2.txt
++++ b/File2.txt
+@@ -4,4 +4,6 @@ in this file i am adding some text into the file2
+
+ then again iam adding one more line in this file
+
+-in the file2 fotter content is added
+\ No newline at end of file
++in the file2 fotter content is added
++
++In the last i am gonna add some information
+\ No newline at end of file
+diff --git a/file1.txt b/file1.txt
+index d65042f..0938250 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1,7 +1,2 @@
+-This is my first file contains some text
+-
+-in this file i am gonna add some text in this file1
+-
+-fotter content added
+-
++1- In this file iam gonna insert some information texrt for sample reference.
+
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ls
+File2.txt  Git_upto_commit.txt  file1.txt  hello.py  results.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ notepad file1.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git branch
+  bugfix
+* main
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git checkout bugfix
+error: Your local changes to the following files would be overwritten by checkout:
+        file1.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git stash
+Saved working directory and index state WIP on main: 70193af hek
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git checkout bugfix
+Switched to branch 'bugfix'
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (bugfix)
+$ git checkout main
+Switched to branch 'main'
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ls
+File2.txt  Git_upto_commit.txt  file1.txt  hello.py  results.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ notepad file1.txt
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git checkout bug-fix
+error: pathspec 'bug-fix' did not match any file(s) known to git
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git checkout bugfix
+error: Your local changes to the following files would be overwritten by checkout:
+        file1.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git stash
+Saved working directory and index state WIP on main: 70193af hek
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git stash save "work in progress"
+No local changes to save
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git stash list
+stash@{0}: WIP on main: 70193af hek
+stash@{1}: WIP on main: 70193af hek
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git stash apply
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ^C
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ^C
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git stash apply
+error: Your local changes to the following files would be overwritten by merge:
+        file1.txt
+Please commit your changes or stash them before you merge.
+Aborting
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git add .
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git commit -m "modified file"
+[main 785a240] modified file
+ 1 file changed, 1 insertion(+)
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git branch
+  bugfix
+* main
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git stash apply
+On branch main
+nothing to commit, working tree clean
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git reflog
+785a240 (HEAD -> main) HEAD@{0}: commit: modified file
+70193af HEAD@{1}: reset: moving to HEAD
+70193af HEAD@{2}: checkout: moving from bugfix to main
+55348ea (bugfix) HEAD@{3}: checkout: moving from main to bugfix
+70193af HEAD@{4}: reset: moving to HEAD
+70193af HEAD@{5}: checkout: moving from bugfix to main
+55348ea (bugfix) HEAD@{6}: checkout: moving from main to bugfix
+70193af HEAD@{7}: commit (merge): hek
+73a349a HEAD@{8}: checkout: moving from bugfix to main
+55348ea (bugfix) HEAD@{9}: checkout: moving from main to bugfix
+73a349a HEAD@{10}: checkout: moving from bugfix to main
+55348ea (bugfix) HEAD@{11}: commit: sub added
+1f88d53 HEAD@{12}: checkout: moving from main to bugfix
+73a349a HEAD@{13}: checkout: moving from bugfix to main
+1f88d53 HEAD@{14}: checkout: moving from main to bugfix
+73a349a HEAD@{15}: commit: modified files
+1f88d53 HEAD@{16}: merge bugfix: Fast-forward
+0cf9d60 HEAD@{17}: checkout: moving from bugfix to main
+1f88d53 HEAD@{18}: commit: added fotter
+0cf9d60 HEAD@{19}: checkout: moving from main to bugfix
+0cf9d60 HEAD@{20}: checkout: moving from bugfix1 to main
+0cf9d60 HEAD@{21}: checkout: moving from bugfix to bugfix1
+0cf9d60 HEAD@{22}: checkout: moving from main to bugfix
+0cf9d60 HEAD@{23}: checkout: moving from abdultalha to main
+0cf9d60 HEAD@{24}: checkout: moving from main to abdultalha
+0cf9d60 HEAD@{25}: checkout: moving from abdultalha to main
+0cf9d60 HEAD@{26}: checkout: moving from main to abdultalha
+0cf9d60 HEAD@{27}: commit: Updated Results File
+3577f9f HEAD@{28}: commit: Added results file
+ba12850 HEAD@{29}: commit: Added python file
+:
+55348ea (bugfix) HEAD@{6}: checkout: moving from main to bugfix
+70193af HEAD@{7}: commit (merge): hek
+73a349a HEAD@{8}: checkout: moving from bugfix to main
+55348ea (bugfix) HEAD@{9}: checkout: moving from main to bugfix
+73a349a HEAD@{10}: checkout: moving from bugfix to main
+55348ea (bugfix) HEAD@{11}: commit: sub added
+1f88d53 HEAD@{12}: checkout: moving from main to bugfix
+73a349a HEAD@{13}: checkout: moving from bugfix to main
+1f88d53 HEAD@{14}: checkout: moving from main to bugfix
+73a349a HEAD@{15}: commit: modified files
+1f88d53 HEAD@{16}: merge bugfix: Fast-forward
+0cf9d60 HEAD@{17}: checkout: moving from bugfix to main
+1f88d53 HEAD@{18}: commit: added fotter
+0cf9d60 HEAD@{19}: checkout: moving from main to bugfix
+0cf9d60 HEAD@{20}: checkout: moving from bugfix1 to main
+0cf9d60 HEAD@{21}: checkout: moving from bugfix to bugfix1
+0cf9d60 HEAD@{22}: checkout: moving from main to bugfix
+0cf9d60 HEAD@{23}: checkout: moving from abdultalha to main
+0cf9d60 HEAD@{24}: checkout: moving from main to abdultalha
+0cf9d60 HEAD@{25}: checkout: moving from abdultalha to main
+0cf9d60 HEAD@{26}: checkout: moving from main to abdultalha
+0cf9d60 HEAD@{27}: commit: Updated Results File
+3577f9f HEAD@{28}: commit: Added results file
+ba12850 HEAD@{29}: commit: Added python file
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ^C
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git reflog 0cf9d60
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git remote -V
+error: unknown switch `V'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git remote add origin https://github.com/abdultalha0862/test_repo.git
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git remote -V
+error: unknown switch `V'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git remote -v
+origin  https://github.com/abdultalha0862/test_repo.git (fetch)
+origin  https://github.com/abdultalha0862/test_repo.git (push)
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git branch
+  bugfix
+* main
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ git push origin main
+Enumerating objects: 36, done.
+Counting objects: 100% (36/36), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (33/33), done.
+Writing objects: 100% (36/36), 4.89 KiB | 626.00 KiB/s, done.
+Total 36 (delta 13), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (13/13), done.
+To https://github.com/abdultalha0862/test_repo.git
+ * [new branch]      main -> main
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ^C
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$ ^C
+
+Abdul Talha@AbdulTalha08 MINGW64 ~/Desktop/FolderOne (main)
+$
